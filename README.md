@@ -1,6 +1,6 @@
 # kkyler homepage
 
-🚀 Developed by Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, Netlify, PostCSS, Tailwind CSS.
+🚀 Developed by Boilerplate and Starter for Next.js, Chakra UI, Framer Motion, Three.js and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, Netlify, PostCSS.
 
 ### Requirements
 
