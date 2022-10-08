@@ -8,6 +8,7 @@
 
 ### Folder structure
 
+```
 .
 ├── README.md                       # README file
 ├── __mocks__                       # Mocks for testing
@@ -24,6 +25,7 @@
 │   └── utils                       # Utility functions
 ├── tailwind.config.js              # Tailwind CSS configuration
 └── tsconfig.json                   # TypeScript configuration
+```
 
 ### Testing
 
