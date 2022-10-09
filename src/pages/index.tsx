@@ -8,7 +8,7 @@ const Index = () => {
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
+          <Heading as="h2" variant="title-name">
             Khai Bui
           </Heading>
           <p>Software Engineer (Front-end / Back-end / Mobile)</p>
