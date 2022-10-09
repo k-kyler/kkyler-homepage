@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app';
 
 import Layout from '@/layouts/Layout';
 
-const App = ({ Component, pageProps, router }: AppProps) => {
+const MyApp = ({ Component, pageProps, router }: AppProps) => {
   return (
     <ChakraProvider>
       <Layout router={router}>
@@ -13,4 +13,4 @@ const App = ({ Component, pageProps, router }: AppProps) => {
   );
 };
 
-export default App;
+export default MyApp;
