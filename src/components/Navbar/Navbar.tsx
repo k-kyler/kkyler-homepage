@@ -1,10 +1,18 @@
+import { HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
   Container,
   Flex,
+  IconButton,
+  Link as ChakraLink,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react';
+import NextLink from 'next/link';
 import React, { useMemo } from 'react';
 
 import { Logo } from '../Logo';
@@ -57,6 +65,30 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
             <LinkItem key={item?.href} path={path} {...item} />
           ))}
         </Stack>
+
+        <Box flex={1}>
+          <Box
+            ml={2}
+            display={{ base: 'flex', md: 'none' }}
+            justifyContent="flex-end"
+          >
+            <Menu>
+              <MenuButton
+                aria-label="Menu"
+                variant="outlined"
+                as={IconButton}
+                icon={<HamburgerIcon />}
+              />
+              <MenuList>
+                {linkItems?.map((item) => (
+                  <NextLink key={item.href} href={item.href} passHref>
+                    <MenuItem as={ChakraLink}>{item.children}</MenuItem>
+                  </NextLink>
+                ))}
+              </MenuList>
+            </Menu>
+          </Box>
+        </Box>
       </Container>
     </Box>
   );
