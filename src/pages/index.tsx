@@ -4,12 +4,12 @@ const Index = () => {
   return (
     <Container>
       <Box bg="gray" p={3} mb={6} textAlign="center" borderRadius="lg">
-        {"Hey there, I'm a software engineer from Vietnam"}
+        {"Hey, I'm a software engineer based in Vietnam"}
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Khai Bui (kkyler)
+            Khai Bui
           </Heading>
           <p>Software Engineer (Front-end / Back-end / Mobile)</p>
         </Box>
