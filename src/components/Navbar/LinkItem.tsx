@@ -4,10 +4,10 @@ import NextLink from 'next/link';
 export interface ILinkItem {
   href: string;
   path: string;
-  children: React.ReactNode;
+  content: React.ReactNode;
 }
 
-const LinkItem: React.FC<ILinkItem> = ({ href, path, children }) => {
+const LinkItem: React.FC<ILinkItem> = ({ href, path, content }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray.500', 'whiteAlpha.900');
 
@@ -18,7 +18,7 @@ const LinkItem: React.FC<ILinkItem> = ({ href, path, children }) => {
         color={active ? '#202023' : inactiveColor}
         bg={active ? 'glassTeal' : undefined}
       >
-        {children}
+        {content}
       </ChakraLink>
     </NextLink>
   );

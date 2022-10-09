@@ -12,6 +12,7 @@ import {
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react';
+import styled from '@emotion/styled';
 import NextLink from 'next/link';
 import React, { useMemo } from 'react';
 
@@ -23,23 +24,26 @@ interface INavbar {
   path: string;
 }
 
+const StyledNavbar = styled(Box)`
+  backdrop-filter: blur(10px);
+`;
+
 const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
   const linkItems: Omit<ILinkItem, 'path'>[] = useMemo(() => {
     return [
-      { children: 'Social', href: '/social' },
-      { children: 'Works', href: '/works' },
-      { children: 'Blog', href: '/blog' },
+      { content: 'Social', href: '/social' },
+      { content: 'Works', href: '/works' },
+      { content: 'Blog', href: '/blog' },
     ];
   }, []);
 
   return (
-    <Box
+    <StyledNavbar
       as="nav"
       position="fixed"
-      w="100%"
       zIndex={1}
+      w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
-      style={{ backdropFilter: 'blur(10px)' }}
       {...rest}
     >
       <Container
@@ -61,16 +65,16 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
           mt={{ base: 4, md: 0 }}
           width={{ base: 'full', md: 'auto' }}
         >
-          {linkItems?.map((item) => (
-            <LinkItem key={item?.href} path={path} {...item} />
+          {linkItems?.map(({ href, content }) => (
+            <LinkItem key={href} href={href} path={path} content={content} />
           ))}
         </Stack>
 
         <Box flex={1}>
-          <Box
-            ml={2}
+          <Stack
             display={{ base: 'flex', md: 'none' }}
             justifyContent="flex-end"
+            ml={2}
           >
             <Menu>
               <MenuButton
@@ -80,17 +84,17 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
                 icon={<HamburgerIcon />}
               />
               <MenuList>
-                {linkItems?.map((item) => (
-                  <NextLink key={item.href} href={item.href} passHref>
-                    <MenuItem as={ChakraLink}>{item.children}</MenuItem>
+                {linkItems?.map(({ href, content }) => (
+                  <NextLink key={href} href={href} passHref>
+                    <MenuItem as={ChakraLink}>{content}</MenuItem>
                   </NextLink>
                 ))}
               </MenuList>
             </Menu>
-          </Box>
+          </Stack>
         </Box>
       </Container>
-    </Box>
+    </StyledNavbar>
   );
 };
 
