@@ -1,6 +1,6 @@
 # kkyler homepage
 
-🚀 Developed by Next.js, Chakra UI, Framer Motion, Three.js and TypeScript.
+🚀 Portfolio developed by Next.js, Chakra UI, Framer Motion, Three.js and TypeScript.
 
 ### Requirements
 
@@ -20,10 +20,7 @@
 │   ├── layouts                     # Layouts components
 │   ├── pages                       # Next JS Pages
 │   ├── pages.test                  # Next JS Pages tests (this avoid test to treated as a Next.js pages)
-│   ├── styles                      # Styles folder
-│   ├── templates                   # Default template
 │   └── utils                       # Utility functions
-├── tailwind.config.js              # Tailwind CSS configuration
 └── tsconfig.json                   # TypeScript configuration
 ```
 
