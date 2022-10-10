@@ -15,7 +15,8 @@ import styled from '@emotion/styled';
 import NextLink from 'next/link';
 import React, { useMemo } from 'react';
 
-import { Logo } from '../Logo';
+import { Logo, ThemeToggleButton } from '@/components';
+
 import type { ILinkItem } from './LinkItem';
 import LinkItem from './LinkItem';
 
@@ -68,7 +69,7 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
         </Stack>
 
         <Stack direction="row" align="center" columnGap={2}>
-          <div>Toggle theme button</div>
+          <ThemeToggleButton />
 
           <Stack display={{ base: 'flex', md: 'none' }}>
             <Menu>
