@@ -4,7 +4,7 @@ const Index = () => {
   return (
     <Container>
       <Box bg="gray" p={3} mb={6} textAlign="center" borderRadius="lg">
-        {"Great to see you here. I'm a software engineer based in Vietnam 🍺"}
+        {"What's up. I'm Khai - a software engineer based in Vietnam 🍺"}
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>

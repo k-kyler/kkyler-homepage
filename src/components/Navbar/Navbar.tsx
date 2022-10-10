@@ -31,7 +31,7 @@ const StyledNavbar = styled(Box)`
 const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
   const linkItems: Omit<ILinkItem, 'path'>[] = useMemo(() => {
     return [
-      { content: 'Social', href: '/social' },
+      { content: 'Projects', href: '/projects' },
       { content: 'Works', href: '/works' },
       { content: 'Blog', href: '/blog' },
     ];
