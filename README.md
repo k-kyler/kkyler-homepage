@@ -12,12 +12,13 @@
 .
 ├── README.md                       # README file
 ├── __mocks__                       # Mocks for testing
-├── .github                         # GitHub folder
 ├── .husky                          # Husky configuration
 ├── .vscode                         # VSCode configuration
 ├── public                          # Public assets folder
 ├── src
 │   ├── layouts                     # Layouts components
+│   ├── components                  # Re-usable components
+│   ├── config                      # General configuration
 │   ├── pages                       # Next JS Pages
 │   ├── pages.test                  # Next JS Pages tests (this avoid test to treated as a Next.js pages)
 │   └── utils                       # Utility functions

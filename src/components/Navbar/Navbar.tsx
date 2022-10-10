@@ -2,7 +2,6 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import {
   Box,
   Container,
-  Flex,
   IconButton,
   Link as ChakraLink,
   Menu,
@@ -16,7 +15,8 @@ import styled from '@emotion/styled';
 import NextLink from 'next/link';
 import React, { useMemo } from 'react';
 
-import { Logo } from '../Logo';
+import { Logo, ThemeToggleButton } from '@/components';
+
 import type { ILinkItem } from './LinkItem';
 import LinkItem from './LinkItem';
 
@@ -54,32 +54,28 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
         p={2}
         maxW="container.md"
       >
-        <Flex align="center" mr={5}>
+        <Stack direction="row" align="center">
           <Logo />
-        </Flex>
-
-        <Stack
-          direction={{ base: 'column', md: 'row' }}
-          display={{ base: 'none', md: 'flex' }}
-          alignItems="center"
-          mt={{ base: 4, md: 0 }}
-          width={{ base: 'full', md: 'auto' }}
-        >
-          {linkItems?.map(({ href, content }) => (
-            <LinkItem key={href} href={href} path={path} content={content} />
-          ))}
+          <Stack
+            direction={{ base: 'column', md: 'row' }}
+            display={{ base: 'none', md: 'flex' }}
+            alignItems="center"
+            width={{ base: 'full', md: 'auto' }}
+          >
+            {linkItems?.map(({ href, content }) => (
+              <LinkItem key={href} href={href} path={path} content={content} />
+            ))}
+          </Stack>
         </Stack>
 
-        <Box flex={1}>
-          <Stack
-            display={{ base: 'flex', md: 'none' }}
-            justifyContent="flex-end"
-            ml={2}
-          >
+        <Stack direction="row" align="center" columnGap={2}>
+          <ThemeToggleButton />
+
+          <Stack display={{ base: 'flex', md: 'none' }}>
             <Menu>
               <MenuButton
                 aria-label="Menu"
-                variant="outlined"
+                variant="outline"
                 as={IconButton}
                 icon={<HamburgerIcon />}
               />
@@ -92,7 +88,7 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
               </MenuList>
             </Menu>
           </Stack>
-        </Box>
+        </Stack>
       </Container>
     </StyledNavbar>
   );

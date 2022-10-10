@@ -2,9 +2,8 @@ import { Box, Container } from '@chakra-ui/react';
 import type { AppProps } from 'next/app';
 import React from 'react';
 
-import { Navbar } from '@/components/Navbar';
-
-import { Meta } from './Meta';
+import { Navbar } from '@/components';
+import { Meta } from '@/layouts';
 
 type ILayout = {
   children: React.ReactNode;
