@@ -54,7 +54,7 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
         p={2}
         maxW="container.md"
       >
-        <Stack direction="row" align="center">
+        <Stack direction="row" align="center" columnGap={5}>
           <Logo />
           <Stack
             direction={{ base: 'column', md: 'row' }}
