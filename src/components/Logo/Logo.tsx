@@ -1,35 +1,58 @@
-import { Box, useColorModeValue } from '@chakra-ui/react';
+import { Heading, Stack } from '@chakra-ui/react';
 import styled from '@emotion/styled';
-import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-const LogoContainer = styled(Box)`
-  display: flex;
-  align-items: center;
-  height: 30px;
+const StyledLetter = styled(Heading)`
+  --primary: #33ccee;
+  --primary-dark: #31accc;
+  --secondary: #3093b1;
+  --crystal-gradient: linear-gradient(
+      100deg,
+      transparent 30%,
+      var(--primary),
+      transparent 70%
+    ),
+    linear-gradient(90deg, var(--secondary), var(--primary-dark));
 
-  img {
-    transition: all 0.3s ease-in-out;
-  }
+  background-image: var(--crystal-gradient);
+  background-repeat: no-repeat;
+  background-size: 200% 100%, 100% 100%;
+  background-position: 63% 50%, 50% 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: appear 0.5s forwards, shining 3s linear infinite;
 
-  &:hover img {
-    transform: translateY(-3px);
+  @keyframes shining {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 `;
 
 const Logo = () => {
-  const logoPath = `/assets/images/kyler-logo${useColorModeValue(
-    '-light',
-    '-dark'
-  )}.png`;
-
   return (
     <Link href="/">
       <a>
-        <LogoContainer>
-          <Image src={logoPath} width={210} height={210} alt="kkyler" />
-        </LogoContainer>
+        <Stack direction="row" alignItems="center">
+          <Heading
+            as="h1"
+            size="lg"
+            letterSpacing="tighter"
+            marginLeft={'unset'}
+          >
+            <StyledLetter as="span">k</StyledLetter>
+            kyler
+          </Heading>
+        </Stack>
       </a>
     </Link>
   );
