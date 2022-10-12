@@ -1,19 +1,12 @@
-import { Box, Container, Heading } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
+
+import { Bio, Hero } from '@/components';
 
 const Index = () => {
   return (
     <Container>
-      <Box bg="gray" p={3} mb={6} textAlign="center" borderRadius="lg">
-        {"What's up. I'm Khai - a software engineer based in Vietnam 🍺"}
-      </Box>
-      <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}>
-          <Heading as="h2" variant="title-name">
-            Khai Bui
-          </Heading>
-          <p>Software Engineer (Front-end / Back-end / Mobile)</p>
-        </Box>
-      </Box>
+      <Hero />
+      <Bio />
     </Container>
   );
 };
