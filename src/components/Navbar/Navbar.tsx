@@ -54,13 +54,14 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
         p={2}
         maxW="container.md"
       >
-        <Stack direction="row" align="center" columnGap={5}>
+        <Stack direction="row" align="center" columnGap={4}>
           <Logo />
           <Stack
+            width={{ base: 'full', md: 'auto' }}
             direction={{ base: 'column', md: 'row' }}
             display={{ base: 'none', md: 'flex' }}
             alignItems="center"
-            width={{ base: 'full', md: 'auto' }}
+            columnGap={2}
           >
             {linkItems?.map(({ href, content }) => (
               <LinkItem key={href} href={href} path={path} content={content} />
