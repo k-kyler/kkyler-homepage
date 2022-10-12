@@ -18,7 +18,9 @@ const Bio = () => {
         ml={{ base: 0, md: 6 }}
       >
         <Image
-          src={'/assets/images/khaibui.jpg'}
+          src={
+            'https://res.cloudinary.com/dvfpdutzf/image/upload/v1665593028/portfolio/khaibui_zbanoo.jpg'
+          }
           alt="Khai Bui"
           borderWidth={2}
           borderStyle="solid"
