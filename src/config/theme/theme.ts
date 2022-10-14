@@ -17,6 +17,19 @@ const components = {
       textUnderlineOffset: 3,
     }),
   },
+  Heading: {
+    variants: {
+      'animated-section-title': {
+        fontSize: 20,
+        textDecoration: 'underline',
+        textUnderlineOffset: 6,
+        textDecorationColor: '#525252',
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 4,
+      },
+    },
+  },
 };
 
 const fonts = {
