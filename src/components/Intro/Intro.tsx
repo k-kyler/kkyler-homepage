@@ -1,16 +1,13 @@
 import { Box, Heading, Image } from '@chakra-ui/react';
 import React from 'react';
 
-const Info = () => {
+const Intro = () => {
   return (
     <Box display={{ md: 'flex' }}>
       <Box flexGrow={1}>
-        <Heading as="h2" variant="title-name">
-          Khai Bui
-        </Heading>
+        <Heading as="h2">Khai Bui</Heading>
         <p>Software Engineer (Front-end / Back-end / Mobile)</p>
       </Box>
-
       <Box
         flexShrink={0}
         alignSelf="center"
@@ -33,4 +30,4 @@ const Info = () => {
   );
 };
 
-export default Info;
+export default Intro;
