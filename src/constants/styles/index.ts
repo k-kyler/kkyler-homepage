@@ -1,1 +1,1 @@
-export { default as GlobalStyles } from './GlobalStyles';
+export { default as GlobalStyles, StyledParagraph } from './GlobalStyles';
