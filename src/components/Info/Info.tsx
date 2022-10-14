@@ -1,7 +1,7 @@
 import { Box, Heading, Image } from '@chakra-ui/react';
 import React from 'react';
 
-const Bio = () => {
+const Info = () => {
   return (
     <Box display={{ md: 'flex' }}>
       <Box flexGrow={1}>
@@ -33,4 +33,4 @@ const Bio = () => {
   );
 };
 
-export default Bio;
+export default Info;
