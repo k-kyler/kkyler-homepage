@@ -16,7 +16,7 @@ const LinkItem: React.FC<ILinkItem> = ({ href, path, content }) => {
       <ChakraLink
         p={2}
         color={active ? '#202023' : inactiveColor}
-        bg={active ? 'glassTeal' : undefined}
+        bg={active ? 'grassTeal' : undefined}
       >
         {content}
       </ChakraLink>

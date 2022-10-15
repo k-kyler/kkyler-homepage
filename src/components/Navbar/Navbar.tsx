@@ -12,10 +12,12 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import styled from '@emotion/styled';
+import isEmpty from 'lodash/isEmpty';
 import NextLink from 'next/link';
 import React, { useMemo } from 'react';
 
 import { Logo, ThemeToggleButton } from '@/components';
+import { Paths } from '@/constants';
 
 import type { ILinkItem } from './LinkItem';
 import LinkItem from './LinkItem';
@@ -30,11 +32,11 @@ const StyledNavbar = styled(Box)`
 
 const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
   const linkItems: Omit<ILinkItem, 'path'>[] = useMemo(() => {
-    return [
-      { content: 'Projects', href: '/projects' },
-      { content: 'Works', href: '/works' },
-      { content: 'Blog', href: '/blog' },
-    ];
+    return Object.keys(Paths)?.map((pathName) => ({
+      content: pathName,
+      // @ts-ignore
+      href: !isEmpty(Paths) ? Paths[pathName] : '/',
+    }));
   }, []);
 
   return (
@@ -54,6 +56,7 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
         p={2}
         maxW="container.md"
       >
+        {/* Desktop menu */}
         <Stack direction="row" align="center" columnGap={4}>
           <Logo />
           <Stack
@@ -69,9 +72,9 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
           </Stack>
         </Stack>
 
+        {/* Mobile menu */}
         <Stack direction="row" align="center" columnGap={2}>
           <ThemeToggleButton />
-
           <Stack display={{ base: 'flex', md: 'none' }}>
             <Menu>
               <MenuButton
