@@ -1,6 +1,6 @@
 import { Container } from '@chakra-ui/react';
 
-import { About, Hero, Intro } from '@/components';
+import { About, Bio, Hero, Interest, Intro } from '@/components';
 
 const Index = () => {
   return (
@@ -8,6 +8,8 @@ const Index = () => {
       <Hero />
       <Intro />
       <About />
+      <Bio />
+      <Interest />
     </Container>
   );
 };

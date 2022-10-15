@@ -1,10 +1,4 @@
 import { Global } from '@emotion/react';
-import styled from '@emotion/styled';
-
-export const StyledParagraph = styled.p`
-  text-indent: 1em;
-  text-align: justify;
-`;
 
 const GlobalStyles = () => {
   return (

@@ -1,7 +1,7 @@
 import { Box, Heading, Image } from '@chakra-ui/react';
 import React from 'react';
 
-const Intro = () => {
+const Intro: React.FC = () => {
   return (
     <Box display={{ md: 'flex' }}>
       <Box flexGrow={1}>
