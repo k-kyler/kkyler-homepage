@@ -38,7 +38,7 @@ const StyledLetter = styled(Heading)`
   }
 `;
 
-const Logo = () => {
+const Logo: React.FC = () => {
   return (
     <Link href="/">
       <a>
