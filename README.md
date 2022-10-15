@@ -19,6 +19,7 @@
 │   ├── layouts                     # Layouts components
 │   ├── components                  # Re-usable components
 │   ├── config                      # General configuration
+│   ├── constants                   # General constants
 │   ├── pages                       # Next JS Pages
 │   ├── pages.test                  # Next JS Pages tests (this avoid test to treated as a Next.js pages)
 │   └── utils                       # Utility functions
