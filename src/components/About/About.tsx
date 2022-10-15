@@ -7,7 +7,7 @@ import React from 'react';
 import { AnimatedSection } from '@/components';
 import { Paths } from '@/constants';
 
-export const StyledParagraph = styled.p`
+const StyledParagraph = styled.p`
   text-indent: 1em;
   text-align: justify;
 `;

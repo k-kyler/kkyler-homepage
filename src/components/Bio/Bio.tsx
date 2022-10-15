@@ -31,7 +31,7 @@ const Bio: React.FC = () => {
     },
     {
       timeline: '2022 - Present',
-      content: 'Working as a front-end engineer at OVEN',
+      content: 'Working as a front-end engineer at OVEN.',
     },
   ];
 
