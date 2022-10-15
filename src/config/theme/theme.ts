@@ -12,7 +12,7 @@ const styles = {
 
 const components = {
   Link: {
-    baseStyles: (props: StyleFunctionProps | Record<string, any>) => ({
+    baseStyle: (props: StyleFunctionProps | Record<string, any>) => ({
       color: mode('#3d7aed', '#ff63c3')(props),
       textUnderlineOffset: 3,
     }),
@@ -37,7 +37,7 @@ const fonts = {
 };
 
 const colors = {
-  glassTeal: '#88ccca',
+  grassTeal: '#88ccca',
 };
 
 const config = {

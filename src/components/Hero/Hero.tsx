@@ -10,7 +10,7 @@ const Hero = () => {
       borderRadius="lg"
       bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
     >
-      {"What's up. I'm Khai - a software engineer based in Vietnam 🍺"}
+      {"Thanks for reaching out. I'm Khai!"}
     </Box>
   );
 };
