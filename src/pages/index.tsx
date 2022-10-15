@@ -1,13 +1,13 @@
 import { Container } from '@chakra-ui/react';
 
-import { Detail, Hero, Intro } from '@/components';
+import { About, Hero, Intro } from '@/components';
 
 const Index = () => {
   return (
     <Container>
       <Hero />
       <Intro />
-      <Detail />
+      <About />
     </Container>
   );
 };

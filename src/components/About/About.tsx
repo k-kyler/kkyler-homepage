@@ -4,7 +4,7 @@ import React from 'react';
 import { AnimatedSection } from '@/components';
 import { StyledParagraph } from '@/constants/styles';
 
-const Detail: React.FC = () => {
+const About: React.FC = () => {
   return (
     <AnimatedSection delay={0.5} title="About">
       <Stack>
@@ -15,7 +15,7 @@ const Detail: React.FC = () => {
         </StyledParagraph>
         <StyledParagraph>
           {
-            "My main interest in web development is about making attractive user interfaces and giving end-users awesome experiences, so I mostly like doing the front-end. However, I'm also very interested in doing the back-end stuff, deployment, or other aspects of the software development process."
+            "My main interest in web development is about making attractive user interfaces and giving end-users awesome experiences, so I mostly like doing the front-end. However, I'm also very interested in doing the back-end stuff, deployment, mobile, or any aspects of the software development process."
           }
         </StyledParagraph>
       </Stack>
@@ -23,4 +23,4 @@ const Detail: React.FC = () => {
   );
 };
 
-export default Detail;
+export default About;
