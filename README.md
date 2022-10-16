@@ -32,4 +32,4 @@ All tests are colocated with the source code inside the same directory. So, it m
 
 ### Portfolio inspiration
 
-Special thanks to [craftzdog](https://github.com/craftzdog) for his amazing ideas.
+Special thanks to [craftzdog](https://github.com/craftzdog) for his amazing portfolio ideas.
