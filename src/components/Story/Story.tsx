@@ -12,8 +12,8 @@ const StyledParagraph = styled.p`
   text-align: justify;
 `;
 
-const About: React.FC = () => {
-  const aboutData: { paragraph: React.ReactNode }[] = [
+const Story: React.FC = () => {
+  const storyData: { paragraph: React.ReactNode }[] = [
     {
       paragraph:
         "I'm a software engineer with a deep passion in the web development world. I've been diving into it during self-learning, university, and having hands-on experience with both front-end and back-end along with a few side projects. I love learning new technologies, new stuff, or everything that can help me build great products.",
@@ -26,30 +26,27 @@ const About: React.FC = () => {
       paragraph: (
         <>
           {"Currently, I'm working as a front-end engineer at "}
-          <ChakraLink href="https://oven.vn" target="_blank">
+          <ChakraLink href="https://oven.vn" target="_blank" fontWeight="500">
             OVEN
           </ChakraLink>
-          {
-            ' - a young and continue growing Japanese software agency based in Vietnam.'
-          }
+          {' - A startup Japanese software agency based in Vietnam.'}
         </>
       ),
     },
   ];
 
   return (
-    <AnimatedSection delay={0.1} title="About">
+    <AnimatedSection delay={0.1} title="Story">
       <Stack>
-        {aboutData?.map(({ paragraph }) => (
+        {storyData?.map(({ paragraph }) => (
           <StyledParagraph key={paragraph?.toString()}>
             {paragraph}
           </StyledParagraph>
         ))}
-
-        <Box alignSelf="center" py={2}>
+        <Box alignSelf="center" pt={2}>
           <NextLink href={Paths.Projects}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My projects
+              My works
             </Button>
           </NextLink>
         </Box>
@@ -58,4 +55,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default Story;
