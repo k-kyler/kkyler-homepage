@@ -1,4 +1,3 @@
-export { About } from './About';
 export { AnimatedSection } from './AnimatedSection';
 export { Bio } from './Bio';
 export { Hero } from './Hero';
@@ -6,4 +5,5 @@ export { Interest } from './Interest';
 export { Intro } from './Intro';
 export { Logo } from './Logo';
 export { Navbar } from './Navbar';
+export { Story } from './Story';
 export { ThemeToggleButton } from './ThemeToggleButton';

@@ -27,7 +27,7 @@ const Bio: React.FC = () => {
     {
       timeline: '2022',
       content:
-        "Completed the Bachelor's Program in software engineering at Ton Duc Thang university, Vietnam.",
+        'Completed the Bachelor of Engineering in Software Engineering program at Ton Duc Thang university, Vietnam.',
     },
     {
       timeline: '2022 - Present',
