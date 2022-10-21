@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'kkyler homepage',
-  title: 'kkyler homepage',
-  description: 'My awesome site',
+  site_name: 'kkyler',
+  title: 'Khai Bui - Homepage',
+  description: 'My awesome place',
   locale: 'en',
 };
