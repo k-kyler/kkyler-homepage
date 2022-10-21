@@ -4,6 +4,7 @@ import React from 'react';
 
 import { Navbar } from '@/components';
 import { Meta } from '@/layouts';
+import { AppConfig } from '@/utils/AppConfig';
 
 type ILayout = {
   children: React.ReactNode;
@@ -12,10 +13,7 @@ type ILayout = {
 const Layout: React.FC<ILayout> = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
-      <Meta
-        title="Khai Bui (kkyler) - Homepage"
-        description="My awesome site"
-      />
+      <Meta title={AppConfig.title} description={AppConfig.description} />
       <Navbar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
         {children}
