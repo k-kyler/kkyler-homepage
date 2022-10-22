@@ -50,7 +50,7 @@ const Logo: React.FC = () => {
             marginLeft={'unset'}
           >
             <StyledLetter as="span">k</StyledLetter>
-            kyler
+            khai
           </Heading>
         </Stack>
       </a>
