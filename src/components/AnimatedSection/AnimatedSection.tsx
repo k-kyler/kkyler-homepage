@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import React from 'react';
 
 interface IAnimatedSection {
-  title: React.ReactNode;
+  title?: React.ReactNode;
+  delay?: number;
   children: React.ReactNode;
-  delay: number;
 }
 
 const StyledContainer = chakra(motion.div, {
@@ -13,9 +13,9 @@ const StyledContainer = chakra(motion.div, {
 });
 
 const AnimatedSection: React.FC<IAnimatedSection> = ({
-  title,
+  title = undefined,
+  delay = 0.3,
   children,
-  delay = 0,
 }) => {
   return (
     <StyledContainer
@@ -25,9 +25,11 @@ const AnimatedSection: React.FC<IAnimatedSection> = ({
       transitionDelay={delay?.toString()}
       mb={6}
     >
-      <Heading as="h3" variant="animated-section-title">
-        {title}
-      </Heading>
+      {title && (
+        <Heading as="h3" variant="animated-section-title">
+          {title}
+        </Heading>
+      )}
       <Box>{children}</Box>
     </StyledContainer>
   );

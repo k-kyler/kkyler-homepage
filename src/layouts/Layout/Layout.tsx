@@ -13,7 +13,11 @@ type ILayout = {
 const Layout: React.FC<ILayout> = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
-      <Meta title={AppConfig.title} description={AppConfig.description} />
+      <Meta
+        title={AppConfig.title}
+        description={AppConfig.description}
+        canonical={AppConfig.canonical}
+      />
       <Navbar path={router.asPath} />
       <Container maxW="container.md" pt={14}>
         {children}
