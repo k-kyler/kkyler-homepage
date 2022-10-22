@@ -15,7 +15,8 @@ const LinkItem: React.FC<ILinkItem> = ({ href, path, content }) => {
     <NextLink href={href}>
       <ChakraLink
         p={2}
-        color={active ? '#202023' : inactiveColor}
+        borderRadius="md"
+        color={active ? 'blackAlpha.900' : inactiveColor}
         bg={active ? 'crystal' : undefined}
       >
         {content}

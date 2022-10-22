@@ -9,7 +9,7 @@ const Projects = () => {
     {
       id: 'minizalo',
       title: 'Minizalo',
-      description: 'Simple web chat inspired by Zalo and Facebook',
+      description: 'Web chat inspired by Zalo and Facebook',
       thumbnail:
         'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666428641/portfolio/minizalo_mzvghd.jpg',
     },
@@ -17,7 +17,7 @@ const Projects = () => {
       id: 'tdtu-social-network',
       title: 'TDTU Social Network',
       description:
-        'The social network for Ton Duc Thang University (TDTU), a place for students and university can communicate with each other.',
+        'A place for the students and teachers of Ton Duc Thang University (TDTU) can communicate with each other',
       thumbnail:
         'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666428532/portfolio/tdtu-social-network_jaovyi.jpg',
     },
@@ -25,15 +25,36 @@ const Projects = () => {
       id: 'video-meeting-app',
       title: 'Video Meeting App',
       description:
-        'Implement PeerJS & Socket.io for creating a real-time video meeting application.',
+        'Implement PeerJS & Socket.io for creating a real-time video meeting application',
       thumbnail:
         'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666429477/portfolio/video-meeting-app_hr1teh.jpg',
+    },
+    {
+      id: 'covid19-tracker',
+      title: 'Covid-19 Tracker',
+      description:
+        'Worldwide Covid-19 tracker web application with visual graphs built with Coronavirus Map API',
+      thumbnail:
+        'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666453820/portfolio/covid19-tracker_a2faoz.gif',
+    },
+    {
+      id: 'shopping-cart',
+      title: 'Shopping Cart',
+      description:
+        'A shopping cart demo with product features and payment process developed by Commerce.js and Stripe',
+      thumbnail:
+        'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666454199/portfolio/shopping-cart_hcxcva.jpg',
     },
   ];
 
   return (
     <Container>
-      <Heading as="h3" variant="section-title">
+      <Heading
+        as="h3"
+        variant="section-title"
+        // TODO: May remove this margin top when the 3D animated section be added
+        mt={6}
+      >
         Projects
       </Heading>
 

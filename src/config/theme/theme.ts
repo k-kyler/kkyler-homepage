@@ -2,10 +2,28 @@ import { extendTheme } from '@chakra-ui/react';
 import type { StyleFunctionProps } from '@chakra-ui/theme-tools';
 import { mode } from '@chakra-ui/theme-tools';
 
+const fonts = {
+  heading: "'M PLUS Rounded 1c'",
+};
+
+const colors = {
+  bgLight: '#d5dbe5',
+  bgDark: '#202023',
+  navLight: '#ffffff40',
+  navDark: '#20202380',
+  darkGrey: '#525252',
+  neon: '#ff63c3',
+  crystal: '#33ccee',
+  crystalDark: '#31accc',
+  crystalDarker: '#3093b1',
+  crystalGradient:
+    'linear-gradient(100deg, transparent 30%, #33ccee, transparent 70%), linear-gradient(90deg, #3093b1, #31accc)',
+};
+
 const styles = {
   global: (props: StyleFunctionProps | Record<string, any>) => ({
     body: {
-      bg: mode('#e0e6ef', '#202023')(props),
+      bg: mode('bgLight', 'bgDark')(props),
     },
   }),
 };
@@ -13,7 +31,7 @@ const styles = {
 const components = {
   Link: {
     baseStyle: (props: StyleFunctionProps | Record<string, any>) => ({
-      color: mode('#31accc', '#ff63c3')(props),
+      color: mode('crystal', 'neon')(props),
       textUnderlineOffset: 3,
     }),
   },
@@ -23,7 +41,7 @@ const components = {
         fontSize: 20,
         textDecoration: 'underline',
         textUnderlineOffset: 6,
-        textDecorationColor: '#525252',
+        textDecorationColor: 'darkGrey',
         textDecorationThickness: 4,
         marginTop: 3,
         marginBottom: 4,
@@ -34,14 +52,6 @@ const components = {
       },
     },
   },
-};
-
-const fonts = {
-  heading: "'M PLUS Rounded 1c'",
-};
-
-const colors = {
-  crystal: '#31accc',
 };
 
 const config = {

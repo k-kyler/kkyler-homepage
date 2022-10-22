@@ -14,12 +14,11 @@ import {
 import styled from '@emotion/styled';
 import isEmpty from 'lodash/isEmpty';
 import NextLink from 'next/link';
-import React, { useMemo } from 'react';
+import React from 'react';
 
 import { Logo, ThemeToggleButton } from '@/components';
 import { Paths } from '@/constants';
 
-import type { ILinkItem } from './LinkItem';
 import LinkItem from './LinkItem';
 
 interface INavbar {
@@ -31,13 +30,11 @@ const StyledNavbar = styled(Box)`
 `;
 
 const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
-  const linkItems: Omit<ILinkItem, 'path'>[] = useMemo(() => {
-    return Object.keys(Paths)?.map((pathName) => ({
-      content: pathName,
-      // @ts-ignore
-      href: !isEmpty(Paths) ? Paths[pathName] : '/',
-    }));
-  }, []);
+  const linkItems = Object.keys(Paths)?.map((pathName) => ({
+    content: pathName,
+    // @ts-ignore
+    href: !isEmpty(Paths) ? Paths[pathName] : '/',
+  }));
 
   return (
     <StyledNavbar
@@ -45,7 +42,7 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
       position="fixed"
       zIndex={1}
       w="100%"
-      bg={useColorModeValue('#ffffff40', '#20202380')}
+      bg={useColorModeValue('navLight', 'navDark')}
       {...rest}
     >
       <Container
@@ -57,14 +54,13 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
         maxW="container.md"
       >
         {/* Desktop menu */}
-        <Stack direction="row" align="center" columnGap={4}>
+        <Stack direction="row" align="center" columnGap={2}>
           <Logo />
           <Stack
             width={{ base: 'full', md: 'auto' }}
             direction={{ base: 'column', md: 'row' }}
             display={{ base: 'none', md: 'flex' }}
             alignItems="center"
-            columnGap={2}
           >
             {linkItems?.map(({ href, content }) => (
               <LinkItem key={href} href={href} path={path} content={content} />

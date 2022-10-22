@@ -4,18 +4,6 @@ import Link from 'next/link';
 import React from 'react';
 
 const StyledLetter = styled(Heading)`
-  --primary: #33ccee;
-  --primary-dark: #31accc;
-  --secondary: #3093b1;
-  --crystal-gradient: linear-gradient(
-      100deg,
-      transparent 30%,
-      var(--primary),
-      transparent 70%
-    ),
-    linear-gradient(90deg, var(--secondary), var(--primary-dark));
-
-  background-image: var(--crystal-gradient);
   background-repeat: no-repeat;
   background-size: 200% 100%, 100% 100%;
   background-position: 63% 50%, 50% 50%;
@@ -43,13 +31,10 @@ const Logo: React.FC = () => {
     <Link href="/">
       <a>
         <Stack direction="row" alignItems="center">
-          <Heading
-            as="h1"
-            size="lg"
-            letterSpacing="tighter"
-            marginLeft={'unset'}
-          >
-            <StyledLetter as="span">k</StyledLetter>
+          <Heading as="h1" size="lg" letterSpacing="tighter">
+            <StyledLetter as="span" bg="crystalGradient">
+              k
+            </StyledLetter>
             khai
           </Heading>
         </Stack>
