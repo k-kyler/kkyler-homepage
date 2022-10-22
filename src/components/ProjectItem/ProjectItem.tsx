@@ -19,7 +19,7 @@ const ProjectItem: React.FC<IProjectItem> = ({
 }) => {
   return (
     <Box w="100%" textAlign="center">
-      <NextLink href={`${Paths.Projects}/${id}`} passHref scroll={false}>
+      <NextLink href={`${Paths.Projects}${id}`} passHref scroll={false}>
         <LinkBox cursor="pointer">
           <Image
             src={thumbnail}
@@ -29,8 +29,8 @@ const ProjectItem: React.FC<IProjectItem> = ({
             borderRadius="md"
           />
 
-          <LinkOverlay href={`${Paths.Projects}/${id}`}>
-            <Text mt={2} fontSize={20} fontWeight={500}>
+          <LinkOverlay href={`${Paths.Projects}${id}`}>
+            <Text mt={4} mb={1} fontSize={20} fontWeight={500}>
               {title}
             </Text>
           </LinkOverlay>
