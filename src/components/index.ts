@@ -5,5 +5,6 @@ export { Interest } from './Interest';
 export { Intro } from './Intro';
 export { Logo } from './Logo';
 export { Navbar } from './Navbar';
+export { ProjectItem } from './ProjectItem';
 export { Story } from './Story';
 export { ThemeToggleButton } from './ThemeToggleButton';

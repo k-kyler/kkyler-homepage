@@ -28,6 +28,10 @@ const components = {
         marginTop: 3,
         marginBottom: 4,
       },
+      'section-title': {
+        fontSize: 20,
+        marginBottom: 4,
+      },
     },
   },
 };
