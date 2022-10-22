@@ -30,7 +30,7 @@ const ProjectItem: React.FC<IProjectItem> = ({
           />
 
           <LinkOverlay href={`${Paths.Projects}/${id}`}>
-            <Text mt={3} mb={1} fontSize={20} fontWeight={500}>
+            <Text mt={2} fontSize={20} fontWeight={500}>
               {title}
             </Text>
           </LinkOverlay>
