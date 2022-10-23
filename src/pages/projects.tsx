@@ -35,7 +35,7 @@ const Projects = () => {
       description:
         'Worldwide Covid-19 tracker web application with visual graphs built with Coronavirus Map API',
       thumbnail:
-        'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666453820/portfolio/covid19-tracker_a2faoz.gif',
+        'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666453820/portfolio/covid19-tracker_a2faoz.jpg',
     },
     {
       id: 'shopping-cart',
