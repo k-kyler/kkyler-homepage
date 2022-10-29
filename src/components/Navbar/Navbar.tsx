@@ -11,7 +11,6 @@ import {
   Stack,
   useColorModeValue,
 } from '@chakra-ui/react';
-import styled from '@emotion/styled';
 import isEmpty from 'lodash/isEmpty';
 import NextLink from 'next/link';
 import React from 'react';
@@ -25,10 +24,6 @@ interface INavbar {
   path: string;
 }
 
-const StyledNavbar = styled(Box)`
-  backdrop-filter: blur(10px);
-`;
-
 const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
   const linkItems = Object.keys(Paths)?.map((pathName) => ({
     content: pathName,
@@ -37,11 +32,12 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
   }));
 
   return (
-    <StyledNavbar
+    <Box
       as="nav"
       position="fixed"
       zIndex={1}
       w="100%"
+      backdropFilter="blur(10px)"
       bg={useColorModeValue('navLight', 'navDark')}
       {...rest}
     >
@@ -54,13 +50,13 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
         maxW="container.md"
       >
         {/* Desktop menu */}
-        <Stack direction="row" align="center" columnGap={2}>
+        <Stack direction="row" align="center" columnGap={5}>
           <Logo />
           <Stack
-            width={{ base: 'full', md: 'auto' }}
-            direction={{ base: 'column', md: 'row' }}
             display={{ base: 'none', md: 'flex' }}
+            direction={{ base: 'column', md: 'row' }}
             alignItems="center"
+            width={{ base: 'full', md: 'auto' }}
           >
             {linkItems?.map(({ href, content }) => (
               <LinkItem key={href} href={href} path={path} content={content} />
@@ -69,7 +65,7 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
         </Stack>
 
         {/* Mobile menu */}
-        <Stack direction="row" align="center" columnGap={2}>
+        <Stack direction="row" align="center">
           <ThemeToggleButton />
           <Stack display={{ base: 'flex', md: 'none' }}>
             <Menu>
@@ -90,7 +86,7 @@ const Navbar: React.FC<INavbar> = ({ path, ...rest }) => {
           </Stack>
         </Stack>
       </Container>
-    </StyledNavbar>
+    </Box>
   );
 };
 

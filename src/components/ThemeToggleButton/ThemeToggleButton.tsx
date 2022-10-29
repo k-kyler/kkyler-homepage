@@ -10,16 +10,15 @@ const ThemeToggleButton: React.FC = () => {
     <AnimatePresence mode="wait" initial={false}>
       <motion.div
         key={useColorModeValue('light', 'dark')}
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 20, opacity: 0 }}
-        transition={{ duration: 0.25 }}
-        style={{ display: 'inline-block' }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
       >
         <IconButton
           aria-label="Theme toggle button"
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-          colorScheme={useColorModeValue('purple', 'yellow')}
+          colorScheme={useColorModeValue('crystal', 'jade')}
           onClick={toggleColorMode}
         />
       </motion.div>

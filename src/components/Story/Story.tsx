@@ -1,5 +1,11 @@
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Box, Button, Link as ChakraLink, Stack } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Link as ChakraLink,
+  Stack,
+  useColorModeValue,
+} from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import NextLink from 'next/link';
 import React from 'react';
@@ -45,7 +51,10 @@ const Story: React.FC = () => {
         ))}
         <Box alignSelf="center" pt={2}>
           <NextLink href={Paths.Projects}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button
+              rightIcon={<ChevronRightIcon />}
+              colorScheme={useColorModeValue('crystal', 'jade')}
+            >
               My works
             </Button>
           </NextLink>

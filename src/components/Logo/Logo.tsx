@@ -1,4 +1,4 @@
-import { Heading, Stack } from '@chakra-ui/react';
+import { Heading, Stack, useColorModeValue } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 import Link from 'next/link';
 import React from 'react';
@@ -6,14 +6,17 @@ import React from 'react';
 const StyledLetter = styled(Heading)`
   background-repeat: no-repeat;
   background-size: 200% 100%, 100% 100%;
-  background-position: 63% 50%, 50% 50%;
+  background-position: 50% 50%, 50% 50%;
+
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  animation: appear 0.5s forwards, shining 3s linear infinite;
 
-  @keyframes shining {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  animation: appear 0.5s forwards, shinny 3s linear infinite;
+
+  @keyframes shinny {
     0% {
       background-position: 0% 50%;
     }
@@ -32,10 +35,13 @@ const Logo: React.FC = () => {
       <a>
         <Stack direction="row" alignItems="center">
           <Heading as="h1" size="lg" letterSpacing="tighter">
-            <StyledLetter as="span" bg="crystalGradient">
+            <StyledLetter
+              as="span"
+              bg={useColorModeValue('crystalGradient', 'jadeGradient')}
+            >
               k
             </StyledLetter>
-            khai
+            hai
           </Heading>
         </Stack>
       </a>
