@@ -1,6 +1,6 @@
 # kkyler homepage
 
-🚀 Portfolio developed by Next.js, Chakra UI, Styled Components, Framer Motion, Three.js and TypeScript.
+🚀 Portfolio developed by Next.js, Chakra UI, Styled Components, Framer Motion and TypeScript.
 
 ### Requirements
 
