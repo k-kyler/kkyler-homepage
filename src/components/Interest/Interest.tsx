@@ -4,7 +4,7 @@ import { AnimatedSection } from '../AnimatedSection';
 
 const Interest: React.FC = () => {
   return (
-    <AnimatedSection title="🤙 Interest" delay={0.7}>
+    <AnimatedSection title="Interest" delay={0.7}>
       <p>Coding, tech stuff, music, coffee and 🍺.</p>
     </AnimatedSection>
   );

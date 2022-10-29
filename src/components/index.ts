@@ -6,5 +6,6 @@ export { Logo } from './Logo';
 export { Message } from './Message';
 export { Navbar } from './Navbar';
 export { ProjectItem } from './ProjectItem';
+export { Social } from './Social';
 export { Story } from './Story';
 export { ThemeToggleButton } from './ThemeToggleButton';
