@@ -10,10 +10,10 @@ const ThemeToggleButton: React.FC = () => {
     <AnimatePresence mode="wait" initial={false}>
       <motion.div
         key={useColorModeValue('light', 'dark')}
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        exit={{ y: 20, opacity: 0 }}
-        transition={{ duration: 0.25 }}
+        initial={{ rotate: -50, opacity: 0 }}
+        animate={{ rotate: 0, opacity: 1 }}
+        exit={{ rotate: 50, opacity: 0 }}
+        transition={{ duration: 0.2 }}
         style={{ display: 'inline-block' }}
       >
         <IconButton
