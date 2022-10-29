@@ -8,7 +8,8 @@ const Message: React.FC = () => {
       my={6}
       textAlign="center"
       borderRadius="lg"
-      bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      bg={useColorModeValue('whiteAlpha.900', 'whiteAlpha.200')}
+      boxShadow="rgba(0, 0, 0, 0.04) 0px 3px 5px"
     >
       {"Thanks for reaching out. I'm Khai!"}
     </Box>

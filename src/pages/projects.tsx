@@ -49,13 +49,8 @@ const Projects = () => {
 
   return (
     <Container>
-      <Heading
-        as="h3"
-        variant="section-title"
-        // TODO: May remove this margin top when the 3D animated section be added
-        mt={6}
-      >
-        Projects
+      <Heading as="h3" variant="section-title" mt={6}>
+        Side Projects
       </Heading>
 
       <SimpleGrid gap={6} columns={[1, 1, 2]}>

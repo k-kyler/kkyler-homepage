@@ -5,10 +5,10 @@ const blog = () => {
   return (
     <Container>
       <Heading as="h3" variant="section-title" mt={6}>
-        My Blog 🚀
+        My Blog
       </Heading>
 
-      <p>Update soon...</p>
+      <p>Coming soon...</p>
     </Container>
   );
 };
