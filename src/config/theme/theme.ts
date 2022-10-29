@@ -75,6 +75,11 @@ const components = {
         fontSize: 20,
         marginBottom: 4,
       },
+      'social-item': {
+        fontSize: 14,
+        marginBottom: 4,
+        color: mode('jade.200', 'crystal.500'),
+      },
     },
   },
 };
