@@ -1,7 +1,7 @@
 import { Box, useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 
-const Hero: React.FC = () => {
+const Message: React.FC = () => {
   return (
     <Box
       p={3}
@@ -15,4 +15,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Message;

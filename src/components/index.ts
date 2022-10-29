@@ -1,9 +1,9 @@
 export { AnimatedSection } from './AnimatedSection';
 export { Bio } from './Bio';
-export { Hero } from './Hero';
 export { Interest } from './Interest';
 export { Intro } from './Intro';
 export { Logo } from './Logo';
+export { Message } from './Message';
 export { Navbar } from './Navbar';
 export { ProjectItem } from './ProjectItem';
 export { Story } from './Story';
