@@ -9,7 +9,7 @@ export interface ILinkItem {
 
 const LinkItem: React.FC<ILinkItem> = ({ href, path, content }) => {
   const active = path === href;
-  const activeBackgroundColor = useColorModeValue('crystal.500', 'jade.200');
+  const activeBackgroundColor = useColorModeValue('blueGray.500', 'jade.200');
   const activeColor = useColorModeValue('white', 'black');
   const inactiveColor = useColorModeValue('gray.500', 'whiteAlpha.900');
 

@@ -53,7 +53,7 @@ const Story: React.FC = () => {
           <NextLink href={Paths.Projects}>
             <Button
               rightIcon={<ChevronRightIcon />}
-              colorScheme={useColorModeValue('crystal', 'jade')}
+              colorScheme={useColorModeValue('blueGray', 'jade')}
             >
               My works
             </Button>
