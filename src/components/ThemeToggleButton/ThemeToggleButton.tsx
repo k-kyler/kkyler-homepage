@@ -18,7 +18,7 @@ const ThemeToggleButton: React.FC = () => {
         <IconButton
           aria-label="Theme toggle button"
           icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
-          colorScheme={useColorModeValue('crystal', 'jade')}
+          colorScheme={useColorModeValue('blueGray', 'jade')}
           onClick={toggleColorMode}
         />
       </motion.div>

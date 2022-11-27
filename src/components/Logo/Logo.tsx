@@ -37,7 +37,7 @@ const Logo: React.FC = () => {
           <Heading as="h1" size="lg" letterSpacing="tighter">
             <StyledLetter
               as="span"
-              bg={useColorModeValue('crystalGradient', 'jadeGradient')}
+              bg={useColorModeValue('darkCrystalGradient', 'darkJadeGradient')}
             >
               k
             </StyledLetter>
