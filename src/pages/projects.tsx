@@ -11,7 +11,7 @@ const Projects = () => {
       title: 'Minizalo',
       description: 'Web chat inspired by Zalo and Facebook',
       thumbnail:
-        'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666428641/portfolio/minizalo_mzvghd.jpg',
+        'https://res.cloudinary.com/dln0u19lm/image/upload/v1690392778/My%20portfolio/minizalo.jpg',
     },
     {
       id: 'tdtu-social-network',
@@ -19,7 +19,7 @@ const Projects = () => {
       description:
         'A place for the students and teachers of Ton Duc Thang University (TDTU) can communicate with each other',
       thumbnail:
-        'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666428532/portfolio/tdtu-social-network_jaovyi.jpg',
+        'https://res.cloudinary.com/dln0u19lm/image/upload/v1690395803/My%20portfolio/tdtu-social-network.jpg',
     },
     {
       id: 'video-meeting-app',
@@ -27,7 +27,7 @@ const Projects = () => {
       description:
         'Implement PeerJS & Socket.io for creating a real-time video meeting application',
       thumbnail:
-        'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666429477/portfolio/video-meeting-app_hr1teh.jpg',
+        'https://res.cloudinary.com/dln0u19lm/image/upload/v1690394997/My%20portfolio/video-meeting-app.jpg',
     },
     {
       id: 'covid19-tracker',
@@ -35,7 +35,7 @@ const Projects = () => {
       description:
         'Worldwide Covid-19 tracker web application with visual graphs built with Coronavirus Map API',
       thumbnail:
-        'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666453820/portfolio/covid19-tracker_a2faoz.jpg',
+        'https://res.cloudinary.com/dln0u19lm/image/upload/v1690395161/My%20portfolio/covid19-tracker_fdidd7.gif',
     },
     {
       id: 'shopping-cart',
@@ -43,7 +43,7 @@ const Projects = () => {
       description:
         'A shopping cart demo with product features and payment process developed by Commerce.js and Stripe',
       thumbnail:
-        'https://res.cloudinary.com/dvfpdutzf/image/upload/v1666454199/portfolio/shopping-cart_hcxcva.jpg',
+        'https://res.cloudinary.com/dln0u19lm/image/upload/v1690393485/My%20portfolio/shoppiness.jpg',
     },
   ];
 
