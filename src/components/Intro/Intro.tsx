@@ -6,7 +6,7 @@ const Intro: React.FC = () => {
     name: 'Khai Bui',
     description: 'Software Engineer (Front-end / Back-end / Mobile)',
     avatar:
-      'https://res.cloudinary.com/dvfpdutzf/image/upload/v1665593028/portfolio/khaibui_zbanoo.jpg',
+      'https://res.cloudinary.com/dln0u19lm/image/upload/v1690396100/My%20portfolio/khaibui.jpg',
   };
 
   return (
