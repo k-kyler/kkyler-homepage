@@ -6,7 +6,7 @@ const Intro: React.FC = () => {
     name: 'Khai Bui',
     description: 'Software Engineer (Front-end / Back-end / Mobile)',
     avatar:
-      'https://res.cloudinary.com/dln0u19lm/image/upload/v1690396100/My%20portfolio/khaibui.jpg',
+      'https://res.cloudinary.com/dln0u19lm/image/upload/v1690397455/My%20portfolio/kb.jpg',
   };
 
   return (
@@ -26,7 +26,9 @@ const Intro: React.FC = () => {
           alt={selfInfo.name}
           border="2px solid #fff"
           borderRadius="full"
-          maxWidth="96px"
+          width="96px"
+          height="96px"
+          objectFit="cover"
         />
       </Stack>
     </Stack>
